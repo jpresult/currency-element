@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<element type="text" group="Form" orderable="true">
+    <name>Currency</name>
+    <author>G. Arends</author>
+    <creationDate>Maart 2012</creationDate>
+    <copyright>Copyright (C) JP Result</copyright>
+    <authorEmail>galo@jpresult.nl</authorEmail>
+    <authorUrl>http://www.jpresult.nl</authorUrl>
+    <version>2.5.0</version>
+    <description>Currency input</description>
+    <params group="render">
+        <param name="currency" type="list" default="EUR" label="Currency Symbol" description="CHOOSE_CURRENCY_SYMBOL">
+            <option value="USD">US Dollar</option>
+            <option value="EUR">Euro</option>
+        </param>
+    </params>
+</element>
