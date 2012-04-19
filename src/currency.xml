@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<element type="text" group="Form" orderable="true">
+<element type="text" group="Other" orderable="true">
     <name>Currency</name>
     <author>G. Arends</author>
     <creationDate>Maart 2012</creationDate>
@@ -9,7 +9,7 @@
     <version>2.5.0</version>
     <description>Currency input</description>
     <params group="render">
-        <param name="currency" type="list" default="EUR" label="Currency Symbol" description="CHOOSE_CURRENCY_SYMBOL">
+        <param name="currency" type="list" default="EUR" label="Currency Symbol">
             <option value="USD">US Dollar</option>
             <option value="EUR">Euro</option>
         </param>
