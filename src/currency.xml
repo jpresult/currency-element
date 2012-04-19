@@ -13,5 +13,9 @@
             <option value="USD">US Dollar</option>
             <option value="EUR">Euro</option>
         </param>
+        <param name="closing_cost" type="list" default="0" label="Closing Cost">
+            <option value="1">JYES</option>
+            <option value="0">JNO</option>
+        </param>
     </params>
 </element>
