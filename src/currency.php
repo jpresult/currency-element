@@ -9,6 +9,8 @@
 // no direct access
 defined('_JEXEC') or die('Restricted access');
 
+$language =& JFactory::getLanguage();
+$language->load('' , dirname(__FILE__));
 /*
    Class: ElementCurrency
        The currency element class
@@ -47,7 +49,12 @@ class ElementCurrency extends Element {
                 $currency = '$';
                 break;
         }
-        return $currency.$this->get('value');
+        $html = $currency.$this->get('value');
+        $closing_cost = (bool)$params->get('closing_cost');
+        if($closing_cost) {
+            $html .= ' '.JText::_('CLOSING_COST');
+        }
+        return $html;
     }
 
     /*
